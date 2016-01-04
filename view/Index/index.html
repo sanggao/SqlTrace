@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>PHP SqlTrace</title>
+
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body{height:100%;background: #ccc;}
+		.container{padding-top: 30px;}
+		.main-l{}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+		  <div class="col-md-3 main-l">
+		  	 <div class="panel panel-primary">
+			   <div class="panel-heading">
+			      <h3 class="panel-title">控制台</h3>
+			   </div>
+			   <div class="panel-body">
+			      <button type="button" class="btn btn-info">开启记录</button>
+			      <button type="button" class="btn btn-danger pull-right">停止记录</button>
+			      <button type="button" class="btn btn-warning">清空记录</button>
+			      <button type="button" class="btn btn-success pull-right">刷新记录</button>
+			   </div>
+			</div>
+		  </div>
+		  <div class="col-md-9 main-r">
+		  		<div class="panel panel-info">
+				   <div class="panel-heading">
+				      <h3 class="panel-title">sql流程</h3>
+				   </div>
+				  
+				</div>
+		  </div>
+		</div>
+	</div>
+</body>
+</html>

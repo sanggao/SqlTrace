@@ -1,0 +1,54 @@
+
+D:\phpStudy\MySQL\bin\mysqld.exe, Version: 5.5.40 (MySQL Community Server (GPL)). started with:
+TCP Port: 3306, Named Pipe: MySQL
+Time                 Id Command    Argument
+151222 12:19:50	   77 Quit	
+151222 12:20:01	   78 Connect	root@localhost on circleservice
+		   78 Query	SET NAMES 'utf8'
+		   78 Query	SHOW FULL COLUMNS FROM `circlesrv_msgs`
+		   78 Query	SHOW CREATE TABLE `circlesrv_msgs`
+		   78 Query	SELECT COUNT(*) FROM `circlesrv_msgs` `t` WHERE (m_to=NULL or m_to='0') and m_show=0
+151222 12:20:02	   79 Connect	root@localhost on up_service_test
+		   79 Query	SET NAMES 'utf8'
+		   79 Query	SHOW FULL COLUMNS FROM `upsrv_config`
+		   79 Query	SHOW CREATE TABLE `upsrv_config`
+		   79 Query	SELECT * FROM `upsrv_config` `t`
+		   79 Query	SELECT `q`.*, `t`.`topic_name`
+FROM `upask_question` `q`
+JOIN `upask_topic` `t` ON t.topic_id = q.topic_id
+WHERE q.ques_id = 550837
+		   79 Query	SHOW FULL COLUMNS FROM `upsrv_user`
+		   79 Query	SHOW CREATE TABLE `upsrv_user`
+		   79 Query	SELECT user_photo_url FROM `upsrv_user` `t` WHERE user_id='10002' LIMIT 1
+		   79 Query	SHOW FULL COLUMNS FROM `upask_attach`
+		   79 Query	SHOW CREATE TABLE `upask_attach`
+		   79 Query	SELECT attach_id, attach_file_name FROM `upask_attach` `t` WHERE  ques_id=550837 ORDER BY attach_id ASC LIMIT 6
+		   79 Query	SHOW FULL COLUMNS FROM `upask_topic`
+		   79 Query	SHOW CREATE TABLE `upask_topic`
+		   79 Query	SELECT topic_id,topic_name FROM `upask_topic` `t` WHERE topic_display=1 ORDER BY topic_que_nums ASC LIMIT 8
+		   79 Query	SELECT topic_id,topic_name FROM `upask_topic` `t` WHERE topic_display=1 ORDER BY topic_que_nums ASC
+		   78 Quit	
+		   79 Quit	
+151222 12:22:03	   80 Connect	root@localhost on 
+		   80 Query	SET character_set_connection=utf8, character_set_results=utf8, character_set_client=binary
+		   80 Query	SET sql_mode=''
+		   80 Query	SHOW VARIABLES LIKE 'basedir'
+		   80 Query	SELECT UNIX_TIMESTAMP() AS timeline, UNIX_TIMESTAMP('2015-12-22 12:22:03') AS timezone
+		   80 Init DB	up_service_test
+		   80 Query	SHOW FULL COLUMNS FROM `upask_attach`
+		   80 Quit	
+151222 14:46:58	   81 Connect	root@localhost on 
+		   81 Query	SET character_set_connection=utf8, character_set_results=utf8, character_set_client=binary
+		   81 Query	SET sql_mode=''
+		   81 Query	SHOW VARIABLES LIKE 'basedir'
+		   81 Query	SELECT UNIX_TIMESTAMP() AS timeline, UNIX_TIMESTAMP('2015-12-22 14:46:58') AS timezone
+		   81 Init DB	up_service_test
+		   81 Query	SHOW VARIABLES LIKE 'general_log'
+		   81 Quit	
+151222 14:47:03	   82 Connect	root@localhost on 
+		   82 Query	SET character_set_connection=utf8, character_set_results=utf8, character_set_client=binary
+		   82 Query	SET sql_mode=''
+		   82 Query	SHOW VARIABLES LIKE 'basedir'
+		   82 Query	SELECT UNIX_TIMESTAMP() AS timeline, UNIX_TIMESTAMP('2015-12-22 14:47:03') AS timezone
+		   82 Init DB	up_service_test
+		   82 Query	SET GLOBAL general_log = 0
