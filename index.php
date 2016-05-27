@@ -34,6 +34,6 @@ include('./controller/'.$controller.'.class.'.'php');
 
 $class = new $controller;
 
-$class->$method();
+$class->$method();;
 
 
