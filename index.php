@@ -35,5 +35,6 @@ include('./controller/'.$controller.'.class.'.'php');
 $class = new $controller;
 
 $class->$method();;
+//添加注释
 
 
