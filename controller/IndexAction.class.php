@@ -63,7 +63,7 @@ class IndexAction extends Action{
 				
 			}
 		}
-
+		11111111111111111
 		echo $str;
 		
 	}
