@@ -83,7 +83,7 @@ class IndexAction extends Action{
 				exit('sql错误');
 			}
 
-			$db = new mysql();
+			$db = new mysql();/////////////////////
 			$res = $db->getAll($sql);
 			p($res);
 		}
